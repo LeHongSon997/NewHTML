@@ -1,0 +1,33 @@
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+}
+.content-product {
+    margin-right: 5px;
+}
+.input {
+    width: 100px;
+}
+.input1 {
+    width: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(1) {
+    background-color: #dddddd;
+}
+tr:nth-child(3) {
+    background-color: #dddddd;
+}
+.body

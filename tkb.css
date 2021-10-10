@@ -1,0 +1,33 @@
+body {
+    padding: 50px;
+}
+
+table{
+    width: 100%;
+  border-collapse: collapse;}
+td, th {
+    padding: 20px;
+    border: 1px solid black;
+}
+.h1 {
+background-color:yellow;}
+.h2 {
+    background-color: orange;
+}
+.th3 {
+    background-color: white;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+.ul2 {
+    float: right;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+ul li {
+    color: blue;
+}

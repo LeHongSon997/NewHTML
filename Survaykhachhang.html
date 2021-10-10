@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Khách hàng</title>
+    <link rel="stylesheet" href="Survey.css">
+
+</head>
+<body>
+<div class="header">
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments complete this</p>
+</div>
+<div class="body">
+    <div>
+        <div>
+            <h3>What is your age range?</h3>
+            <input type="number" placeholder="18-24">
+        </div>
+        <div>
+            <h3>What is your yearly income range?</h3>
+            <input type="number" placeholder="$0 - $25,000">
+        </div>
+    </div>
+    <div>
+        <h3>Gender</h3>
+        <div>
+            <input type="radio" name="Gioitinh" value="male">Male<br>
+            <input type="radio" name="Gioitinh" value="female">Female
+        </div>
+    </div>
+    <div>
+        <h3>which of the following products have your purchased in the last 2 months.Please check all that apply.</h3>
+        <div>
+            <input type="checkbox" name="Product 1" value="Product 1">Product 1
+        </div>
+        <div>
+            <input type="checkbox" name="Product 2" value="Product 2">Product 2
+        </div>
+        <div>
+            <input type="checkbox" name="Product 3" value="Product 3">Product 3
+        </div>
+    </div>
+    <div>
+        <h3>How often would you use our new product?</h3>
+        <div>
+            <input type="radio" name="Daily" value="Daily">Daily
+        </div>
+        <div>
+            <input type="radio" name="Weekly" value="Weekly">Weekly
+        </div>
+        <div>
+            <input type="radio" name="Monthly" value="Monthly">Monthly
+        </div>
+    </div>
+    <div>
+        <h3>What would you pay for the new product?</h3>
+        <div class="price" style="width: 100%">
+            <div class="content-product">$</div>
+            <div class="content-product">
+                <input type="text" class="input">
+                <div>Dollars</div>
+            </div>
+            <div class="content-product">-</div>
+            <div class="content-product">
+                <input type="text" class="input1">
+                <div>Cents</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3>What features would you like to see in the new product.</h3>
+        <div>
+            <textarea cols="60" rows="10"></textarea>
+        </div>
+        <div>
+            <h3>Please rate your level of ogreement with the following statements.</h3>
+            <div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Strongly Disagree</th>
+                        <th>Disagree</th>
+                        <th>Agree</th>
+                        <th>Trongly Agree</th>
+                    </tr>
+                    <tr>
+                        <td><h4>Our products are priced faily.</h4></td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>1</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>2</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>3</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>4</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Our products are high quality</h4></td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>1</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>2</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>3</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>4</div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>You would recommend our product to a friend or coworker</h4></td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>1</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>2</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>3</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio">
+                                <div>4</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button>Submit</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

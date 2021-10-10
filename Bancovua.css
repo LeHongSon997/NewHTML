@@ -1,0 +1,16 @@
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+tr, th {
+    padding: 30px;
+}
+.c1 {
+    border-bottom-color: orange;
+    background-color: orange;
+}
+.c2 {
+    background-color: black;
+}

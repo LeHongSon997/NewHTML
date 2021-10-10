@@ -1,0 +1,41 @@
+h2 {
+    text-align: center;
+    color: blue;
+}
+body {
+    width: 50%;
+}
+table {
+    width: 100%;
+}
+.h1 {
+    background-color: orange;
+    color: white;
+    border-color: white;
+}
+table, th, td {
+    border: 2px solid gray;
+    border-collapse: collapse;;
+}
+/*th {*/
+/*    padding: 30px;*/
+/*}*/
+/*tr {*/
+/*    padding: 10px;*/
+/*}*/
+
+/*.h2 {*/
+/*   border: 1px solid green;*/
+/*}*/
+.cn {
+    background-color:red;
+}
+.t1 {
+    color: red;
+}
+.t7 {
+    background-color: blue;
+}
+.t2 {
+    color: blue;
+}
