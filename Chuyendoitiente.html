@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+</head>
+<body>
+<form>
+<input type="text" id="dauvao">
+<select name="" id="Giatri1">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<select name="" id="Giatri2">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="OK()">Convert</button>
+</form>
+<script>
+    function OK() {
+        let giatrivao = document.getElementById('dauvao').value;
+        let Giatri1 = document.getElementById('Giatri1').value;
+        let Giatri2 = document.getElementById('Giatri2').value;
+        if (Giatri1 == Giatri2) {
+            alert(giatrivao);
+        }
+        if (Giatri1 == "a" && Giatri2 == "b") {
+            alert(giatrivao/23000);
+        }
+        if (Giatri1 == "b" && Giatri2 == "a") {
+            alert(giatrivao*23000);
+        }
+    }
+</script>
+</body>
+</html>
