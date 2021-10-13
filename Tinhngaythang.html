@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Số ngày trong tháng</title>
 </head>
 <body>
-$END$
+<label><input type="text" id="input"></label>
+<button onclick="hienThi()">tinh so ngay</button>
+<p id="result">result: </p>
 </body>
+<script>
+    function hienThi() {
+        let thang = +(document.getElementById("input").value);
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("input").innerHTML = "result: " + "Tháng" + thang + "có 31 ngày";
+                break;
+            case 2:
+                document.getElementById("input").innerHTML = "result: " + "Tháng" + thang + "có 28 hoặc 29 ngày";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("input").innerHTML = "result: " + "Tháng" + thang + "có 30 ngày";
+                break;
+        }
+    }
+</script>
 </html>
