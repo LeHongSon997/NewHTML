@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>So Nguyen To</title>
 </head>
 <body>
-$END$
+<script>
+
+    let count = 0
+    let numbers = prompt("Nhập vào số lượng số bạn muốn in: ")
+    let N = 2
+    while (count < numbers) {
+        if (N % 2 === 0) {
+            count++
+            document.write(N + "<br>")
+        }
+        N++
+    }
+</script>
 </body>
 </html>
