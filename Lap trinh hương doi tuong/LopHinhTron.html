@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function maxMinAvg(arr) {
+    //     //your code here
+    //    let max = arr[0];
+    //     for (let i = 1; i < arr.length; i++) {
+    //         if (arr[i] > max) {
+    //             max = arr[i];
+    //             arrnew.push(max);
+    //         }
+    //     }
+    //    let min = arr[0];
+    //     for (let i = 1; i < arr.length; i++) {
+    //         if (arr[i] < min) {
+    //             min = arr[i];
+    //             arrnew.push(min)
+    //         }
+    //     }
+    //     let sum = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         sum = sum + i;
+    //     }
+    //     let avg;
+    //     avg = sum/arr.length;
+    //     arrnew.push(avg);
+    //     return arrnew;
+    //
+    // }
+    // let arrNew = +prompt('');
+    // let arrnew = maxMinAvg(arrNew);
+    // console.log(arrnew);
+
+    let Circle = function (radius) {
+
+        this.radius = radius;
+
+    };
+    this.getRadius = function () {
+        return radius;
+    }
+    this.getArea = function () {
+        return Math.PI * radius * radius;
+    }
+    let circle = new Circle(2);
+    let radius = circle.getRadius();
+
+    let area = circle.getArea();
+    alert("radius: " + radius + "; area: " + area);
+</script>
+</body>
+</html>
