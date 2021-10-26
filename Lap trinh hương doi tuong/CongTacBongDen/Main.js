@@ -1,0 +1,5 @@
+let lamp = new Lamp(false)
+let switchBt = new SwitchButton(false)
+switchBt.connectToLamp(lamp)
+switchBt.switchOn()
+switchBt.connectToLamp(lamp)

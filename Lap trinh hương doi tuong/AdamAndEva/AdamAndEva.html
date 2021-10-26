@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        weight;
+
+        constructor(weight) {
+            this.weight = weight
+        }
+
+        getWeight(){
+            return this.weight
+        }
+
+        isEmpty(){
+            if (this.weight > 0){
+                return true
+            }
+        }
+
+        decrease(){
+            if (this.weight > 0){
+                this.weight--
+            }
+        }
+    }
+
+    class Human{
+        name;
+        gender;
+        weight;
+
+        constructor(name, gender, weight) {
+            this.name = name
+            this.gender = gender
+            this.weight = weight
+        }
+
+        isMale(){
+            if (this.gender === 'Male'){
+                return true
+            } else {
+                return false
+            }
+        }
+
+        setGender(gender){
+            this.gender = gender
+        }
+
+        checkApple(Apple){
+            if (Apple > 0){
+                return true
+            } else {
+                return false
+            }
+        }
+
+        eat(Apple){
+            if(Apple > 0)  {
+                return Apple - 1
+            }
+        }
+
+        say(String){
+            return String
+        }
+
+        getName(){
+            return this.name
+        }
+
+        setName(name){
+            this.name = name
+        }
+
+        getWeight(){
+            return this.weight + 1
+        }
+
+        setWeight(weight){
+            return this.weight = weight
+        }
+    }
+
+    let apple = new Apple(10)
+    let human = new Human('Son', 'Male', 55)
+
+    console.log('weight human current',human.setWeight(55))
+    console.log('Total apple >>>',apple.getWeight())
+
+    human.eat(apple.getWeight())
+    human.getWeight()
+    console.log('human weight after eat apple' , human.getWeight())
+
+    apple.decrease()
+    console.log('apple after eat >>>', apple.getWeight())
+
+    human.checkApple(apple.getWeight())
+    console.log('check total apple' ,  human.checkApple(apple.getWeight()))
+
+    human.say()
+    console.log(human.say('Hi'))
+
+    human.setName('Hau')
+    console.log('New Name Human:',human.getName())
+
+    human.setGender('Female')
+    console.log('New Gender Human:', human.isMale())
+</script>
+</body>
+</html>
