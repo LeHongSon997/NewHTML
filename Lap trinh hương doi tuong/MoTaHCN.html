@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+<script>
+    class Rectangle {
+        dai;
+        rong;
+
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+
+        getDai() {
+            return this.dai;
+        }
+
+        getRong() {
+            return this.rong;
+        }
+
+        setDai(chieuDai) {
+            this.dai = chieuDai;
+        }
+
+        setRong(chieuRong) {
+            this.rong = chieuRong;
+        }
+
+        getArea() {
+            return this.dai * this.rong;
+        }
+
+        getPerimeter() {
+            return (this.dai + this.rong) * 2;
+        }
+
+        createCircle(x, y) {
+            let ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.fillRect(x, y, this.dai, this.rong);
+            ctx.fill();
+        }
+    }
+    let rectangle = new Rectangle(400,200)
+    let perimeter = rectangle.getPerimeter();
+    let area = rectangle.getArea();
+    alert("Perimeter: " + perimeter + "; Area: " + area);
+    rectangle.createCircle(50,50);
+</script>
+</canvas>
+</body>
+</html>
